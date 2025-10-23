@@ -1,5 +1,7 @@
 body{
     background-color: #9F7D4F;
+    background-size: cover;     
+    background-position: center; 
 }
 a{
     color: white;
