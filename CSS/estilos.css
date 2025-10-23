@@ -1,0 +1,49 @@
+body{
+    background-color: #9F7D4F;
+}
+a{
+    color: white;
+}
+.parrafos{
+    color: white;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+}
+.titulos{
+    text-decoration: underline;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    font-weight: bolder;
+}
+.listas{
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    text-indent: 2;
+    line-height: 1.5;
+}
+.stitulos{
+    text-align: left;
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.pie-de-pagina{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.img{
+    height: 243px;
+    width: 239;
+}
+.vid{
+    width: 443px;
+    height: 239px;
+}
