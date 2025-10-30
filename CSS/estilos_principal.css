@@ -1,0 +1,141 @@
+body {
+    background-color: #d3d3d3; 
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0%;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #f7d600;
+    margin: 0%;
+    border: 1px solid;
+    border-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cubiertos {
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    margin-right: 10px;
+
+}
+.titulo {
+    text-decoration: underline;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 800;
+    font-family: 'JetBrains Mono', monospace;
+    text-align: center;
+}
+section {
+    flex-direction: column;
+    flex:1;
+}
+aside{
+    margin-right: 15px;
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: white;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+.principal{
+    display: flex;
+    flex-direction: auto;
+    align-items: flex-start;
+    
+}
+
+.stitulos {
+    text-align: center;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    border-left: 7px solid #000000;
+    padding-left: 10px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+.parrafos {
+    font-size: 25px;
+    line-height: 1.6;
+    margin: 10px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.listas {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+a{
+    color: unset;
+}
+.Carpincho {
+    height: 341px;
+    width: 512px;
+}
+.icono {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+footer{
+    background-color: #f7d600;
+    border: 1px solid;
+    border-color: transparent;
+    color: #000000;
+}
+.pie-de-pagina {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.pie-de-pagina a {
+    text-decoration: none;
+}
+.links  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    }
+
+    .whatsapp:hover {
+    transform: scale(1.1);
+    }
+
+    .whatsapp img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    }

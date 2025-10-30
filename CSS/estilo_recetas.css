@@ -1,0 +1,297 @@
+body {
+    background-color: #d3d3d3; 
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0%;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #f7d600;
+    margin: 0%;
+    border: 1px solid;
+    border-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cubiertos {
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    margin-right: 10px;
+
+}
+.titulo {
+    text-decoration: underline;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 800;
+    font-family: 'JetBrains Mono', monospace;
+    text-align: center;
+}
+.icono {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+footer{
+    background-color: #f7d600;
+    border: 1px solid;
+    border-color: transparent;
+    color: #000000;
+}
+.pie-de-pagina {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.pie-de-pagina a {
+    text-decoration: none;
+}
+.links  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.recetas {
+    box-shadow: 0px 2px 10px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    background-color: #636363;
+    border-radius: 10px;
+    padding: 0%;
+    margin: 15px;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+}
+.recetas h3 {
+    text-decoration: underline;
+    font-weight: 600;
+    text-decoration-color: #f7d600;
+    
+}
+.recetas a {
+    color: unset;
+    text-decoration-color: #f7d600;
+}
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.boton {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f7d600;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.stitulos {
+    text-align: left;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    border-left: 7px solid #000000;
+    padding-left: 10px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+.IngredientesTitulo {
+    text-align: center;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    padding-left: 10px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+.sstitulos {
+    text-align: left;
+    color: #000000;
+    font-size: 26px;
+    font-weight: 700;
+    border-left: 7px solid #000000;
+    padding-left: 10px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+.parrafos {
+    font-size: 25px;
+    line-height: 1.6;
+    margin: 10px;
+    color: #000000;
+    font-weight: 400;
+}
+.introduccion {
+    border: 1px black solid;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 20px; 
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);   
+}
+.mapita{
+    width: 400px;
+    height: 500px;
+}
+.mapa {
+    margin-top: 10px;
+    margin-right: 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: white;
+    max-height: max-content;
+}
+.general {
+    display: flex;
+    flex-direction: column;
+}
+.inicio{
+    display: flex;
+}
+.introduccion{
+    display: flex;
+    flex-direction: column;
+}
+.Preparacion {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+}
+.Ingredientes {
+    border: 1px black solid;
+    background-color: #f7d600;
+    margin-left: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+.Ingredientes ul {
+    color: black;
+}
+.pasoapaso{
+    border: 1px black solid;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    max-height: max-content;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+.pasoapaso li{
+    margin: 15px;
+}
+.pasoapaso ol {
+    font-size: 24px;
+    line-height: 1.6;
+    margin: 10px;
+    color: #000000;
+    font-weight: 400;
+
+}
+.final {
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.img {
+    height: 225px;
+    width: 400px;
+}
+.Consejos ul{
+    font-size: 24px;
+    line-height: 1.6;
+    margin: 10px;
+    color: #000000;
+    font-weight: 400;
+}
+.Consejos {
+    border: 1px black solid;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    max-height: max-content;
+    padding-top: 10px;
+    padding-bottom: 25px;
+
+}
+.cuadro{
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    padding: 7px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+    max-height: max-content;
+    max-width: max-content;
+    margin: 10px;
+}
+.video {
+    border: 1px black solid;
+    background-color: #f7d600;
+    margin-left: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    max-height: max-content;
+}
+.vid {
+    margin: 10px;
+    height: 300px;
+    width: 550px;
+}
+.resultado {
+    border: 1px black solid;
+    background-color: #f7d600;
+    margin-left: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    max-height: max-content;
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    }
+
+    .whatsapp:hover {
+    transform: scale(1.1);
+    }
+
+    .whatsapp img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    }
