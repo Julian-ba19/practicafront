@@ -258,6 +258,12 @@ footer{
     height: 300px;
     width: 550px;
 }
+.ultimo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
 .resultado {
     border: 1px black solid;
     background-color: #f7d600;
@@ -295,3 +301,30 @@ footer{
     height: 40px;
     display: block;
     }
+.principal {
+    border: 1px black solid;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    max-height: max-content;
+    max-width: max-content;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.Carpincho {
+    height: 241px;
+    width: 412px;
+}
+.linkprin{
+    color: #000000;
+    font-weight: bold;
+    font-size: 26px;
+}
