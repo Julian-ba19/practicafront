@@ -9,6 +9,7 @@ body {
     padding: 0%;
     min-height: 100vh;
 }
+
 main {
     flex: 1;
     display: flex;
@@ -18,54 +19,73 @@ main {
 header {
     background-color: #f7d600;
     margin: 0%;
-    border: 1px solid;
-    border-color: transparent;
+    border: 1px solid transparent;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 15px;
+    padding: 10px;
 }
-.cubiertos {
-    width: 58px;
-    height: 58px;
-    text-align: center;
-    margin-right: 10px;
 
+.Logo {
+    width: 65px;
+    height: auto;
+    flex: 0 0 auto;
 }
+
 .titulo {
+    flex: 1 1 200px;
     text-decoration: underline;
     color: #fff;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 800;
     font-family: 'JetBrains Mono', monospace;
     text-align: center;
+    margin: 0;
 }
+
 .icono {
     width: 25px;
     height: 25px;
     text-align: center;
 }
-footer{
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer {
     background-color: #f7d600;
-    border: 1px solid;
-    border-color: transparent;
+    border: 1px solid transparent;
     color: #000000;
 }
+
 .pie-de-pagina {
     display: flex;
     justify-content: center;
     gap: 40px;
     align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
 }
+
 .pie-de-pagina a {
     text-decoration: none;
 }
+
 .links  {
     display:flex;
     justify-content: center;
     align-items: center;
     gap: 3px;
 }
+
 .recetas {
     box-shadow: 0px 2px 10px rgb(0, 0, 0);
     display: flex;
@@ -77,22 +97,26 @@ footer{
     text-align: center;
     font-family: 'JetBrains Mono', monospace;
 }
+
 .recetas h3 {
     text-decoration: underline;
     font-weight: 600;
     text-decoration-color: #f7d600;
-    
 }
+
 .recetas a {
     color: unset;
     text-decoration-color: #f7d600;
 }
+
 .botones {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
+    flex-wrap: wrap;
 }
+
 .boton {
     border-style: solid;
     border-width: 1px;
@@ -100,22 +124,24 @@ footer{
     padding: 5px;
     border-radius: 10px;
     margin: 10px;
+    flex: 1 1 150px;
 }
 
 .stitulos {
     text-align: left;
     color: #000000;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     border-left: 7px solid #000000;
     padding-left: 10px;
     margin-left: 10px;
     text-decoration: underline;
 }
+
 .IngredientesTitulo {
     text-align: center;
     color: #000000;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     padding-left: 10px;
     margin-left: 10px;
@@ -125,7 +151,7 @@ footer{
 .sstitulos {
     text-align: left;
     color: #000000;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
     border-left: 7px solid #000000;
     padding-left: 10px;
@@ -134,49 +160,59 @@ footer{
 }
 
 .parrafos {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.6;
     margin: 10px;
     color: #000000;
     font-weight: 400;
 }
-.introduccion {
-    border: 1px black solid;
-    background-color: #ffffff;
-    margin: 10px;
-    border-radius: 20px; 
-    box-shadow: 5px 5px 10px rgb(0, 0, 0);   
+
+.general,
+.inicio,
+.Preparacion,
+.final,
+.ultimo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
 }
-.mapita{
-    width: 400px;
-    height: 500px;
+
+.introduccion,
+.mapa,
+.Ingredientes,
+.pasoapaso,
+.Consejos,
+.video,
+.resultado {
+    flex: 1 1 300px;
+    max-width: 600px;
+    width: 100%;
 }
+
+.mapita {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
 .mapa {
-    margin-top: 10px;
-    margin-right: 20px;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 450px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
-    padding: 15px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding: 20px;
     background-color: white;
-    max-height: max-content;
+    border-radius: 15px;
 }
-.general {
-    display: flex;
-    flex-direction: column;
+
+.introduccion {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 15px;
 }
-.inicio{
-    display: flex;
-}
-.introduccion{
-    display: flex;
-    flex-direction: column;
-}
-.Preparacion {
-    display: flex;
-    margin-top: 15px;
-    align-items: center;
-}
+
 .Ingredientes {
     border: 1px black solid;
     background-color: #f7d600;
@@ -184,102 +220,120 @@ footer{
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
+
 .Ingredientes ul {
     color: black;
 }
-.pasoapaso{
+
+.pasoapaso {
     border: 1px black solid;
     background-color: #ffffff;
     margin: 10px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
-    max-height: max-content;
     padding-top: 10px;
     padding-bottom: 25px;
 }
-.pasoapaso li{
+
+.pasoapaso li {
     margin: 15px;
 }
-.pasoapaso ol {
-    font-size: 24px;
-    line-height: 1.6;
-    margin: 10px;
-    color: #000000;
-    font-weight: 400;
 
-}
-.final {
-    display: flex;
-    margin-bottom: 15px;
-    margin-top: 10px;
-}
-.img {
-    height: 225px;
-    width: 400px;
-}
-.Consejos ul{
-    font-size: 24px;
+.pasoapaso ol {
+    font-size: 20px;
     line-height: 1.6;
     margin: 10px;
     color: #000000;
     font-weight: 400;
 }
+
+.img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+.Consejos ul {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 10px;
+    color: #000000;
+    font-weight: 400;
+}
+
 .Consejos {
     border: 1px black solid;
     background-color: #ffffff;
     margin: 10px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
-    max-height: max-content;
     padding-top: 10px;
     padding-bottom: 25px;
-
 }
-.cuadro{
+
+.cuadro {
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
     padding: 7px;
     padding-top: 20px;
     padding-bottom: 10px;
     background-color: white;
-    max-height: max-content;
-    max-width: max-content;
     margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
 .video {
     border: 1px black solid;
     background-color: #f7d600;
-    margin-left: 15px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
-    max-height: max-content;
 }
+
 .vid {
     margin: 10px;
-    height: 300px;
-    width: 550px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 16/9;
 }
-.ultimo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
+
 .resultado {
     border: 1px black solid;
     background-color: #f7d600;
-    margin-left: 15px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
-    max-height: max-content;
-    max-width: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
     padding: 15px;
 }
+
+.principal {
+    border: 1px black solid;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.Carpincho {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -290,40 +344,19 @@ footer{
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     transition: transform 0.3s ease;
-    }
+}
 
-    .whatsapp:hover {
+.whatsapp:hover {
     transform: scale(1.1);
-    }
+}
 
-    .whatsapp img {
+.whatsapp img {
     width: 40px;
     height: 40px;
     display: block;
-    }
-.principal {
-    border: 1px black solid;
-    background-color: #ffffff;
-    margin: 10px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0);
-    max-height: max-content;
-    max-width: max-content;
-    padding-top: 10px;
-    padding-bottom: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
+}
 
-}
-.Carpincho {
-    height: 241px;
-    width: 412px;
-}
-.linkprin{
+.linkprin {
     color: #000000;
     font-weight: bold;
     font-size: 26px;
