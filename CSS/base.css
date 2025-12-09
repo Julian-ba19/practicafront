@@ -87,6 +87,10 @@ footer{
         justify-content: center;
         flex-direction: column;
     }
+    header{
+        justify-content: center;
+        flex-direction: column;
+    }
     .aux{
         display: none;
     }
