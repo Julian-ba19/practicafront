@@ -84,6 +84,9 @@ header > * {
         justify-content: center;
         flex-direction: column;
     }
+    .aux{
+        display: none;
+    }
 }
 footer{
     background-color: #f7d600;
