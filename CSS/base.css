@@ -23,8 +23,18 @@ header{
     gap: 10px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.85);
 }
-header * {
-    flex-shrink: 0;
+footer{
+    background-color: #f7d600;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid transparent;
+    padding: 5px;
+    margin: 0px;
+    width: 100%;
+    gap: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.85);
 }
 .divisor,.redes, .titulo, .redesF, .divisor-footer {
     flex: 1;
@@ -66,13 +76,6 @@ header * {
     max-width: 50px;
     height: auto;
 }
-header {
-    align-items: center;
-}
-header > * {
-    flex-grow: 1;
-    justify-content: center;
-}
 @media (max-width: 700px) {
     .divisor, .titulo, .redes, .redesF, .divisor-footer {
         justify-content: center;
@@ -87,18 +90,6 @@ header > * {
     .aux{
         display: none;
     }
-}
-footer{
-    background-color: #f7d600;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    border-bottom: 1px solid transparent;
-    padding: 5px;
-    margin: 0px;
-    width: 100%;
-    gap: 10px;
 }
 .redesF {
     justify-content: center;
