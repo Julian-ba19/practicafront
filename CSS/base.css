@@ -35,6 +35,10 @@ header * {
 .divisor{
     justify-content: flex-start;
 }
+.divisor-footer{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .titulo{
     text-align: center;
 }
@@ -70,7 +74,7 @@ header > * {
     justify-content: center;
 }
 @media (max-width: 600px) {
-    .divisor, .titulo, .redes, .redesF {
+    .divisor, .titulo, .redes, .redesF, .divisor-footer {
         justify-content: center;
     }
     .titulo h1 {
@@ -171,3 +175,14 @@ footer{
     background-color: #f7d600;
     color: #0B0B0B;
 }
+html {
+    scroll-behavior: smooth;
+}
+.card img {
+    transition: transform .3s;
+}
+
+.card:hover img {
+    transform: scale(1.03);
+}
+
