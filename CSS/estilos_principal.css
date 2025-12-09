@@ -1,88 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #d3d3d3;
-    padding: 0px;
-    margin: 0px;
-    font-family: Arial, sans-serif;
-    font-size: 17px;
-    color: #333;
-}
-header{
-    background-color: #f7d600;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    border-bottom: 1px solid transparent;
-    padding: 5px;
-    margin: 0px;
-    width: 100%;
-    gap: 10px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.85);
-}
-header * {
-    flex-shrink: 0;
-}
-.divisor,.redes, .titulo, .redesF {
-    flex: 1 1 250px;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-}
-
-.divisor{
-    justify-content: flex-start;
-}
-.titulo{
-    text-align: center;
-}
-.titulo h1 {
-    font-family: "Pacifico", cursive;
-    font-size: 3rem;
-    margin: 0;
-    text-align: center;
-    color: #333;
-}
-
-.redes{
-    justify-content: flex-end;
-    gap: 5%;
-}
-.Logo{
-    width: 100%;
-    max-width: 90px;
-    height: auto;
-    padding-left: 5px;
-    padding-bottom: 10px;
-}
-.icono {
-    width: 100%;
-    max-width: 50px;
-    height: auto;
-}
-header {
-    align-items: center;
-}
-header > * {
-    flex-grow: 1;
-    justify-content: center;
-}
-@media (max-width: 600px) {
-    .divisor, .titulo, .redes, .redesF {
-        justify-content: center;
-    }
-    .titulo h1 {
-        font-size: 1.8rem;
-    }
-    footer{
-        justify-content: center;
-        flex-direction: column;
-    }
-}
-
 main{
     background-color: #d3d3d3;
     margin: 0;
@@ -91,45 +6,6 @@ main{
     justify-content: center;
     box-sizing: border-box;
     align-items: center;
-}
-
-footer{
-    background-color: #f7d600;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    border-bottom: 1px solid transparent;
-    padding: 5px;
-    margin: 0px;
-    width: 100%;
-}
-.redesF {
-    justify-content: center;
-    gap: 5%;
-    max-height: 60px;
-}
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    border-radius: 50%;
-    padding: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    transition: transform 0.3s ease;
-    }
-
-.whatsapp:hover {
-    transform: scale(1.1);
-}
-
-.whatsapp img {
-    width: 40px;
-    height: 40px;
-    display: block;
 }
 
 .bienvenida {
@@ -167,6 +43,7 @@ footer{
     padding: 15px;
     box-sizing: border-box;
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 .carousel-control-prev-icon,
@@ -182,7 +59,7 @@ footer{
 }
 
 .recetario {
-    margin-top: 15px;
+    margin-top: 25px;
     width: 98%;
     display: flex;
     justify-content: center;
@@ -221,3 +98,35 @@ footer{
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.85); 
     margin-top: 20px;
 }   
+.ModoOscuro{
+    color: #353535;
+    background-color: #464646;
+}
+.ModoOscuro .card{
+    background-color: #313131;
+    color: #ffffff;
+    box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.5),
+    0 0 12px rgba(247, 214, 0, 0.18); 
+}
+.ModoOscuro main{
+    background-color: #464646;
+}
+.ModoOscuro .bienvenida, .ModoOscuro .carrusel, .ModoOscuro .recetario{
+    background-color: #272727;
+    color: #ffffff;
+    box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.5),
+    0 0 12px rgba(247, 214, 0, 0.18); 
+}
+.ModoOscuro h2{
+    color: #f7d600;
+}
+.ModoOscuro .carousel-control-prev-icon, .ModoOscuro .carousel-control-next-icon{
+    filter: invert(100%) brightness(0%) contrast(0%);
+}
+.btn, .btn-primary {
+    background-color: #f7d600;
+    color: #000000;
+    border-color: #f7d600;
+}
